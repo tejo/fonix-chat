@@ -1,24 +1,34 @@
-# README
+# Fonix chat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Tested with:
 
-Things you may want to cover:
+```
+ruby 3.0.3
+rails 7.0.2.3
+nodejs 17.6.0
+postgres 12.2
+redis 6.0.9
+```
 
-* Ruby version
+#### Setup:
 
-* System dependencies
+run `bin/setup`
 
-* Configuration
+#### Test
 
-* Database creation
+run `bin/rspec`
 
-* Database initialization
+#### Run app:
 
-* How to run the test suite
+run `bin/dev`
 
-* Services (job queues, cache servers, search engines, etc.)
+visit: http://127.0.0.1:3000/
 
-* Deployment instructions
+login: admin@admin.com
 
-* ...
+password: admin1
+
+#### Note
+
+Due to some issues with devise and rails 7 turbo that does not play well with RactDom might be necessary refresh the browser after landing in the chat page upon the login.
+
