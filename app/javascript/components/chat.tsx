@@ -15,12 +15,15 @@ function Chat() {
 
 
     React.useEffect(() => {
+        const chatContainerScroll = document.getElementById("chatContainerScroll");
+        chatContainerScroll.scrollTo(0, chatContainerScroll.scrollHeight);
+
         const subscription = consumer.subscriptions.create(
             { channel: "ChatChannel" },
             {
                 received(data) {
                     setMessages([...messages, data.message]);
-                    window.scrollTo(0, document.body.scrollHeight);
+                    chatContainerScroll.scrollTo(0, chatContainerScroll.scrollHeight);
                 },
             }
         );
@@ -47,6 +50,7 @@ function Chat() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("sdaafs")
     const rootEl = document.getElementById("root");
     ReactDOM.render(<Chat />, rootEl);
 });
