@@ -1,4 +1,4 @@
 weekly_digest:
-  cron: "0 0 * * 0"
+  cron: "0 12 * * MON"
   class: "WeeklyDigestCronJob"
   queue: default

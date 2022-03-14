@@ -1,0 +1,10 @@
+<%= turbo_frame_tag "post" do %>
+    <%= form_with(url: 'messages/create', method: :post, data: {controller: "reset-form"}) do |form| %>
+    <div class="input-group">
+    <%= form.text_field :message, autocomplete: :off, placeholder: "Send message", class: "form-control" %>
+        <button type="submit" class="btn btn-info">
+            <i class="fa fa-paper-plane"></i>
+        </button>
+    </div>
+    <% end %>
+<% end %>
