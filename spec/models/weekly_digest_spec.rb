@@ -1,13 +1,5 @@
 # frozen_string_literal: true
 
-##
-# The system should send to all the users a weekly email specifying how many
-# messages were sent and received in the last week and the total number of
-# messages received since the user has sent his last message.
-# I.e.:
-# 600 messages have been exchanged in the last week.
-# 750 since your last message on the 1st of February.
-
 require 'rails_helper'
 
 RSpec.describe WeeklyDigest, type: :model do
