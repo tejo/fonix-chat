@@ -28,7 +28,3 @@ login: admin@admin.com
 
 password: admin1
 
-#### Note
-
-Due to some issues with devise and rails 7 turbo that does not play well with RactDom might be necessary refresh the browser after landing in the chat page upon the login.
-

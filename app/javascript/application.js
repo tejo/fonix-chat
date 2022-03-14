@@ -2,4 +2,8 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
-import "./components/chat";import "./channels"
+import "./components/chat";
+import "./channels"
+
+import { Turbo } from "@hotwired/turbo-rails"
+Turbo.session.drive = false

@@ -50,7 +50,6 @@ function Chat() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("sdaafs")
     const rootEl = document.getElementById("root");
     ReactDOM.render(<Chat />, rootEl);
 });

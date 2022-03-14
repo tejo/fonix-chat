@@ -1,5 +1,5 @@
 <%= turbo_frame_tag "post" do %>
-    <%= form_with(url: '/messages/create', method: :post, data: {controller: "reset-form"}) do |form| %>
+    <%= form_with(url: '/messages/create', method: :post, data: {turbo: true}) do |form| %>
     <div class="input-group">
     <%= form.text_field :message, autocomplete: :off, placeholder: "Send message", class: "form-control", autofocus: :autofocus%>
         <button type="submit" class="btn btn-info">
