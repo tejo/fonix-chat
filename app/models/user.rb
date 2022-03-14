@@ -8,5 +8,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :messages
 
-  scope :all_but_user , ->(user) { where.not(id: user) } 
+  scope :all_but_user, ->(user) { where.not(id: user) }
 end

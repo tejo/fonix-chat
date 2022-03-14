@@ -6,4 +6,9 @@ FactoryBot.define do
     email { "#{SecureRandom.uuid}@example.com" }
     password { 'password123' }
   end
+
+  factory :message do
+    content { SecureRandom.uuid }
+    association :user
+  end
 end
