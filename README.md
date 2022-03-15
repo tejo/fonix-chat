@@ -6,6 +6,7 @@
 ruby 3.0.3
 rails 7.0.2.3
 nodejs 17.6.0
+yarn 1.22.17
 postgres 12.2
 redis 6.0.9
 ```
